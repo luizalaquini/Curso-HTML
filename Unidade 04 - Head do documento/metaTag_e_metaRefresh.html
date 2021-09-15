@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Aula 23 e 24: Meta Tag e Meta Refresh</title>
+        <!--Metadados = Dados que se comunicam entre computadores-->
+        <meta charset="utf-8">
+        <meta name="author"     content="Luiza Batista Laquini">
+        <meta name="generator"  content="Visual Studio Code">
+        <meta name="keywords"   content="HTML, HTML5, CSS, Javascript, Front-End, VSC">
+        <meta name="description"content="Terceira página do curso de HTML5">
+
+        <meta http-equiv="refresh" content="4">
+
+        <script>
+            function sorteioNumero(){
+                resultado.innerHTML = Math.random() * 100;
+            }
+            
+            window.onload = sorteioNumero;
+        </script>
+        <style>
+            body{
+                background-color: aquamarine;
+                font-style: oblique;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Esta é minha terceira página e ela atualiza a cada 4 segundos com um número aleatório:</p>
+        <p id="resultado"></p>
+    </body>
+
+</html>

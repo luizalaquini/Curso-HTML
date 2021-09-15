@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Segunda Página</title>
+        <meta charset="utf-8">
+        <!--Incrementando CSS ("style")-->
+        <style> 
+            body {
+                background-color: bisque;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: chocolate;
+            }
+        </style>
+        <!--Incrementando JavaScript ("script")-->
+        <script>
+            function escreverNome(){
+                nome.innerHTML = "- Laquini, Luiza.";
+            }
+
+            window.onload = escreverNome;
+        </script>
+    </head>
+    <body>
+        Esta é minha segunda página.
+        <p id="nome"></p>
+    </body>
+</html>
