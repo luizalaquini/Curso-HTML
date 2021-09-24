@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Tabela Semântica</title>
+    </head>
+    
+    <style>
+		body {
+			font-family:Arial, Helvetica, sans-serif;
+		}
+	
+		table { 
+			width:700px;
+			margin:0 auto;
+			border-spacing:0;
+			border-right:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+		}
+		
+		caption {
+			font-size:130%;
+			font-weight:bold;
+			padding:5px 0;
+			background-color:#ECECEC;
+			border:1px solid #ccc;
+			border-bottom:none;
+		}
+		
+		tr, td, th {
+			border:thin solid #ccc;
+			border-bottom:none;
+			border-right:none;
+			padding:5px;
+		}
+		
+		td { 
+			text-align:center;
+		}
+		
+		th {
+			text-align:left;
+		}
+		
+		thead th {
+			text-align:center;
+			background-color:#E0E0E0;
+		}
+
+		thead tr th:first-child {
+			text-align:left;
+		}
+		
+		tfoot td {
+			font-size:.9em;
+			color:#666;
+		}
+
+        .coluna1, .total {
+            background-color: #f0f0f0;
+        }
+
+        .coluna2 {
+            background-color: rgb(192, 180, 127);
+        }
+
+        .coluna3 {
+            background-color: rgb(190, 190, 190);
+        }
+
+        .coluna4 {
+            background-color: rgb(129, 118, 92);
+        }
+        
+	</style>
+	<!-- odd == ímpar | even == par-->
+
+    <body>
+		
+        <table>
+			<caption>Olimpíadas Rio 2016</caption>
+
+            <colgroup>
+                <col class="coluna1"> 
+                <col class="coluna2"> 
+                <col class="coluna3">
+                <col class="coluna4"> 
+                <col class="total">
+            </colgroup>
+
+			<thead>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>USA - Estados Unidos</td>
+					<td>46</td>
+					<td>37</td>
+					<td>38</td>
+					<td>121</td>
+				</tr>
+				
+				<tr>
+					<td>GBR - Grã-Bretanha</td>
+					<td>27</td>
+					<td>23</td>
+					<td>17</td>
+					<td>67</td>
+				</tr>
+				
+				<tr>
+					<td>CHN - China</td>
+					<td>26</td>
+					<td>18</td>
+					<td>26</td>
+					<td>70</td>
+				</tr>
+
+				<tr>
+					<td>RUS - Rússia</td>
+					<td>19</td>
+					<td>17</td>
+					<td>20</td>
+					<td>56</td>
+				</tr>
+
+				<tr>
+					<td>GER - Alemanha</td>
+					<td>17</td>
+					<td>10</td>
+					<td>15</td>
+					<td>42</td>
+				</tr>				
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</tfoot>
+        </table>
+    </body>
+</html>
