@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Type number</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+     
+        <form action="destino.html" method="POST">
+           
+            <input type="text" placeholder="Nome Completo" name="nome" id="nome" size="30" maxlength="100" required autofocus>
+            
+            <input type="email" placeholder="Email" name="email" id="email" size="30" maxlength="50"> 
+            
+            <input type="tel" placeholder="Telefone" name="tel" id="tel" size="30" maxlength="13"> 
+
+            <input type="url" placeholder="Site" name="website" id="website" size="30" maxlength="100"> 
+
+            <label for="filhos">Número de Filhos</label>
+            <input type="number" name="filhos" id="filhos" min="0" max="10" value="0"> <!--type "number" requer um valor máximo e um mínimo, além da possibilidade de se definir um default("value")-->
+            <!--OBS: "size" não funcionou para regular o tamanho do campo-->
+
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+    
+        </form>
+    
+    </body>
+</html>

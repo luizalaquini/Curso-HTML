@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Type Range</title>
+
+        <script>
+            function mostrarNumero () {
+                document.getElementById("resultado").innerHTML = document.getElementById("filhos").value;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form action="index.html" method="post">
+            
+            <label for="filhos">Número de Filhos</label>
+            <input type="range" id="filhos" name="filhos" min="0" max="10" value="0" onchange="mostrarNumero()">
+            <span id="resultado"></span>
+        </form>
+    </body>
+</html>

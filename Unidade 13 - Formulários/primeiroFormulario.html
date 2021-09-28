@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Primeiro Formulário</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+
+        <!--O método "POST" envia os dados de forma escondida e não há limitação de caracteres
+            O método "GET" não é sigiloso e possui limite de 255 caracteres por campo -->
+        <form action="destino.html" method="POST">
+            
+            <label for="nome">Nome Completo:</label> <!--"for" da label se comunica com "id" do input-->
+            <input type="text" name="nome" id="nome" size="30" maxlength="100"> <!--"size" é o tamanho EM CARACTERES do campo (visualmente falando), já "maxlenght" é o real limite de caracteres que pode ser inserido naquele campo-->
+
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" size="30" maxlength="50">
+
+            <label for="tel">Telefone:</label>
+            <input type="text" name="tel" id="tel" size="30" maxlength="13">
+
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </form>
+    
+    </body>
+</html>

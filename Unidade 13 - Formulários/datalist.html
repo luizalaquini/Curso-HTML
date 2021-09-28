@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Datalist ao input text</title>
+    </head>
+
+    <body>
+        <form action="index.html" method="post">
+
+            <input type="text" placeholder="Loja" name="nome_loja" id="nome_loja" size="30" list="lojas">
+            <datalist id="lojas"> <!--esse "id" do datalist se comunica com o "list" do input text-->
+                <option value="Amazon"></option>
+                <option value="Americanas"></option>
+                <option value="Mercado Livre"></option>
+                <option value="Saraiva"></option>
+                <option value="Submarino"></option>
+            </datalist>
+
+        </form>
+    </body>
+</html>

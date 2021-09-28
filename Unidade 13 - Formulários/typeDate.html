@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Type Date</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+     
+        <form action="destino.html" method="POST">
+           
+            <input type="text" placeholder="Nome Completo" name="nome" id="nome" size="30" maxlength="100" required autofocus>
+            
+            <input type="email" placeholder="Email" name="email" id="email" size="30" maxlength="50"> 
+            
+            <input type="tel" placeholder="Telefone" name="tel" id="tel" size="30" maxlength="13"> 
+
+            <input type="url" placeholder="Site" name="website" id="website" size="30" maxlength="100"> 
+
+            <label for="aniversario">Data de Nascimento</label>
+            <input type="date" name="aniversario" id="aniversario" size="30"> <!--type "date" vem anexo ao calendário e ao formato dd/mm/aaaa-->
+            <!--ATENÇÃO! Ainda não funciona plenamente em todos os navegadores! Solução para isso virá no curso de JQuery-->
+
+            <label for="filhos">Número de Filhos</label>
+            <input type="number" name="filhos" id="filhos" min="0" max="10" value="0">
+
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+    
+        </form>
+    
+    </body>
+</html>
